@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    border-bottom: 1px solid #eee;
+    background-color: #fafafa;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.completed .task-text {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.task-buttons {
+    display: flex;
+}
+
+.task-buttons button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task-buttons button.edit {
+    background-color: #ffc107;
+    color: white;
+}
+
+.task-buttons button.edit:hover {
+    background-color: #e0a800;
+}
+
+.task-buttons button.delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.task-buttons button.delete:hover {
+    background-color: #c82333;
+}
+
+.task-buttons button.toggle {
+    background-color: #28a745;
+    color: white;
+}
+
+.task-buttons button.toggle:hover {
+    background-color: #218838;
+}
